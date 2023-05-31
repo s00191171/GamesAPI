@@ -3,19 +3,9 @@ const app = express()
 
 const db = require('./database')
 const port = 3030
-const route = require('./routes/Games');
-app.use('/', route);
+const Games = require('./routes/Games');
+app.use('/games', Games);
 app.use(express.json());
-
-
-
-
-
-
-
-
-
-
 
 
 
